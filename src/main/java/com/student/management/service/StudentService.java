@@ -48,7 +48,7 @@ public class StudentService {
             return new ResponseEntity<ResponseStructure<StudentModel>>(structure,HttpStatus.FOUND);
         }
 
-        throw new IdNotFoundException("Student Id is nod found");
+        throw new IdNotFoundException("Student Id is not found");
     }
 
     public ResponseEntity<ResponseStructure<StudentModel>> changeCourse(Integer studentId, Integer courseId) {

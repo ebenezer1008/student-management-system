@@ -49,7 +49,7 @@ public class CourseService {
             throw  new NoDataFoundException("No data");
         }
         ResponseStructure<List<Course>> structure = new ResponseStructure<>();
-        structure.setMessage("Available courses");
+        structure.setMessage("Available courses are :");
         structure.setData(course);
         structure.setHttpStatus(HttpStatus.OK.value());
 
